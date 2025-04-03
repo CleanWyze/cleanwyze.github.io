@@ -11,7 +11,7 @@
             padding: 0; 
             background: url('https://www.transparenttextures.com/patterns/soapy-bubbles.png'), #f4f4f4;
             background-size: cover;
-            overflow: hidden;
+            overflow: unhidden;
         }
         header {
             background: #4b4b4b; /* Deep Silver Color */
@@ -81,20 +81,5 @@
     <footer>
         <p>&copy; 2025 Clean Wyze powered by: CW ENTERPRISE. All rights reserved.</p>
     </footer>
-    <script>
-        function createBubbles() {
-            for (let i = 0; i < 20; i++) {
-                let bubble = document.createElement("div");
-                bubble.classList.add("bubble");
-                let size = Math.random() * 50 + 10;
-                bubble.style.width = `${size}px`;
-                bubble.style.height = `${size}px`;
-                bubble.style.left = `${Math.random() * 100}vw`;
-                bubble.style.animationDuration = `${Math.random() * 5 + 5}s`;
-                document.body.appendChild(bubble);
-            }
-        }
-        createBubbles();
-    </script>
 </body>
 </html>
