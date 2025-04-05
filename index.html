@@ -5,176 +5,245 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clean Wyze a Subsidiary of: CW ENTERPRISE</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
     <style>
-        body { 
-            font-family: Arial, san-serif,serif;
-            margin: 0; 
+        body {
+            font-family: Arial, san-serif, serif;
+            margin: 0;
             padding: 0;
         }
+
         header {
-            background-image:  url("Assets/RoofBnA.jpg");
+            background-image: url("Assets/RoofBnA.jpg");
             background-repeat: no-repeat;
-            background-color:#3681bf ;
+            background-color: #3681bf;
             background-size: cover;
             background-position: 0 18%;
             color: white;
             padding: 20px;
             text-align: center;
             position: relative;
-            max-height:190px;
-        } 
-        header h1 {
-             font-family: "Ephesis", cursive;
-  font-weight: 400;
-            font-size: 40px;
-  font-style: normal;
+            max-height: 190px;
         }
-        nav { text-align: center; margin: 20px 0; }
-        nav a { margin: 0 15px; text-decoration: none; color: #007bff; font-weight: bold; }
-        .container { max-width: 1200px; margin: auto; padding: 20px; }
-        .section { background: white; padding: 20px; margin-bottom: 20px; border-radius: 5px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+
+        header h1 {
+            font-family: "Ephesis", cursive;
+            font-weight: 800;
+            font-size: 100px;
+            margin: 0 0;
+            font-style: normal;
+            color: rgba(76, 255, 0, 0.71);
+            text-shadow: 5px 5px 5px black;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: rgba(0,0,0,-0);
+        }
+
+        header p {
+            font-size: 28px;
+            color: rgba(76, 255, 0, 0.71);
+            text-shadow: 5px 5px 3px black;
+            font-weight: 650;
+            margin: 3px 0;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: black;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
         footer {
             background: #3681bf;
             color: white;
             padding: 20px;
             text-align: center;
         }
-        .bubble {
-            position: absolute;
-            background: rgba(255, 255, 255, 0.6);
-            border-radius: 50%;
-            opacity: 0.7;
-            animation: float 10s infinite ease-in-out;
-        }
         @keyframes float {
-            0% { transform: translateY(100vh) scale(0.5); opacity: 0.7; }
-            50% { opacity: 1; }
-            100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+            0% {
+                transform: translateY(100vh) scale(0.5);
+                opacity: 0.7;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-10vh) scale(1);
+                opacity: 0;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>CleanWyze!</h1>
-        <p>A Subsidiary of: CW ENTERPRISE</p>
-        <p>Professional Interior & Exterior Residential Cleaning </p>
-    </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-        <a href="#Exterior Soft Wash">Exterior Soft Wash</a>
-        <a href="#Roofs">Roofs</a>
-        <a href="#Gutters and Windows">Gutters and Windows</a>
-        <a href="#Interior Cleaning optionns">Interior Cleaning optionns</a>
-    </nav>
-    <div class="container">
-        <div id="about" class="section">
-            <h2>About Us</h2>
-            <p>We're the cleaning service that understands the importance of a clean home and a relaxed lifestyle. We'll handle the cleaning so you can enjoy your free time. Let us wash all your troubles away!</p>
-        </div>
-        <div id="services" class="section">
-            <h2>Our Services</h2>
-            <ul>
-                <li>Exterior Soft Washing</li>
-                <li>Roof and Gutter Cleaning</li>
-                <li>Fences, Decks, Driveways, Patios, Sidewalks, Porches & More! </li>
-                <li>Window Cleaning</li>
-                <li>Basic Interior Cleaning </li>
-                <li>Interior Deep Cleaning (including Kitchens, Bathrooms, Mudrooms)</li>
-               
-            </ul>
-    <h2>General Cleaning</h2>
-    <ul>
-        <li><strong>Dusting:</strong> Dust all surfaces, including furniture, shelves, picture frames, and light fixtures.</li>
-        <li><strong>Vacuuming/Sweeping:</strong> Vacuum or sweep floors and carpets, paying attention to corners and under furniture.</li>
-        <li><strong>Mopping:</strong> Mop hard floors, ensuring they are clean and free of dirt or stains.</li>
-        <li><strong>Window Cleaning:</strong> Clean windows and window sills, removing smudges and dust.</li>
-        <li><strong>Mirror Cleaning:</strong> Clean mirrors and glass surfaces to a shine.</li>
-        <li><strong>Trash Removal:</strong> Empty trash and recycling bins.</li>
-    </ul>
+<header>
+    <h1>CleanWyze!</h1>
+    <p>     Professional Interior & Exterior Residential Cleaning </p>
+    <p>CALL US TODAY & LET US WASH YOUR TROUBLES AWAY!! 901-267-5863 </p>
+</header>
+<nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="#Exterior Soft Wash">Exterior Soft Wash</a>
+    <a href="#Roofs">Roofs</a>
+    <a href="#Gutters and Windows">Gutters and Windows</a>
+    <a href="#Interior Cleaning optionns">Interior Cleaning optionns</a>
+</nav>
+<div class="container">
+    <div id="about" class="section">
+        <h2>About Us</h2>
+        <p>We're the cleaning service that understands the importance of a clean home and a relaxed lifestyle. We'll
+            handle the cleaning so you can enjoy your free time. Let us wash all your troubles away!</p>
+    </div>
+    <div id="services" class="section">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Exterior Soft Washing</li>
+            <li>Roof and Gutter Cleaning</li>
+            <li>Fences, Decks, Driveways, Patios, Sidewalks, Porches & More!</li>
+            <li>Window Cleaning</li>
+            <li>Basic Interior Cleaning</li>
+            <li>Interior Deep Cleaning (including Kitchens, Bathrooms, Mudrooms)</li>
 
-    <h2>Specific Room Cleaning</h2>
-    <h3>Kitchen</h3>
-    <ul>
-        <li>Clean countertops, sink, and stovetop.</li>
-        <li>Clean the exterior of appliances (refrigerator, oven, microwave, dishwasher).</li>
-        <li>Clean the inside of the microwave.</li>
-        <li>Wipe down cabinets and drawers.</li>
-        <li>Clean and sanitize the sink and faucet.</li>
-        <li>Spot clean walls and the exterior of kitchen cabinets.</li>
-    </ul>
+        </ul>
+        <h2>General Cleaning</h2>
+        <ul>
+            <li><strong>Dusting:</strong> Dust all surfaces, including furniture, shelves, picture frames, and light
+                fixtures.
+            </li>
+            <li><strong>Vacuuming/Sweeping:</strong> Vacuum or sweep floors and carpets, paying attention to corners and
+                under furniture.
+            </li>
+            <li><strong>Mopping:</strong> Mop hard floors, ensuring they are clean and free of dirt or stains.</li>
+            <li><strong>Window Cleaning:</strong> Clean windows and window sills, removing smudges and dust.</li>
+            <li><strong>Mirror Cleaning:</strong> Clean mirrors and glass surfaces to a shine.</li>
+            <li><strong>Trash Removal:</strong> Empty trash and recycling bins.</li>
+        </ul>
 
-    <h3>Bathrooms</h3>
-    <ul>
-        <li>Clean and sanitize toilets, showers, and bathtubs.</li>
-        <li>Clean sinks and countertops.</li>
-        <li>Clean mirrors and glass surfaces.</li>
-        <li>Clean and disinfect light switches and doorknobs.</li>
-    </ul>
+        <h2>Specific Room Cleaning</h2>
+        <h3>Kitchen</h3>
+        <ul>
+            <li>Clean countertops, sink, and stovetop.</li>
+            <li>Clean the exterior of appliances (refrigerator, oven, microwave, dishwasher).</li>
+            <li>Clean the inside of the microwave.</li>
+            <li>Wipe down cabinets and drawers.</li>
+            <li>Clean and sanitize the sink and faucet.</li>
+            <li>Spot clean walls and the exterior of kitchen cabinets.</li>
+        </ul>
 
-    <h3>Bedrooms</h3>
-    <ul>
-        <li>Make beds and ensure linens are clean.</li>
-        <li>Vacuum or sweep floors and carpets.</li>
-        <li>Dust furniture and shelves.</li>
-        <li>Clean windows and window sills.</li>
-    </ul>
+        <h3>Bathrooms</h3>
+        <ul>
+            <li>Clean and sanitize toilets, showers, and bathtubs.</li>
+            <li>Clean sinks and countertops.</li>
+            <li>Clean mirrors and glass surfaces.</li>
+            <li>Clean and disinfect light switches and doorknobs.</li>
+        </ul>
 
-    <h3>Living Areas</h3>
-    <ul>
-        <li>Dust furniture and shelves.</li>
-        <li>Vacuum upholstered furniture.</li>
-        <li>Clean windows and window sills.</li>
-        <li>Clean picture frames.</li>
-        <li>Wipe down light fixtures, switches, and outlets.</li>
-    </ul>
+        <h3>Bedrooms</h3>
+        <ul>
+            <li>Make beds and ensure linens are clean.</li>
+            <li>Vacuum or sweep floors and carpets.</li>
+            <li>Dust furniture and shelves.</li>
+            <li>Clean windows and window sills.</li>
+        </ul>
 
-    <h3>Laundry Room</h3>
-    <ul>
-        <li>Clean and sanitize the washing machine and dryer.</li>
-        <li>Wipe down shelves and walls in laundry closets.</li>
-    </ul>
+        <h3>Living Areas</h3>
+        <ul>
+            <li>Dust furniture and shelves.</li>
+            <li>Vacuum upholstered furniture.</li>
+            <li>Clean windows and window sills.</li>
+            <li>Clean picture frames.</li>
+            <li>Wipe down light fixtures, switches, and outlets.</li>
+        </ul>
 
-    <h2>Additional Tasks</h2>
-    <ul>
-        <li><strong>Decluttering:</strong> Organize and tidy up areas, removing clutter and organizing items.</li>
-        <li><strong>Disinfecting:</strong> Sanitize high-touch surfaces, such as doorknobs, light switches, and countertops.</li>
-        <li><strong>Organizing:</strong> Organize shelves, drawers, and closets.</li>
-        <li><strong>Deep Cleaning:</strong> Depending on the cleaning service, a deep clean might include tasks like cleaning hard-to-reach areas, washing HVAC vent covers, and removing stains.</li>
-    </ul>
+        <h3>Laundry Room</h3>
+        <ul>
+            <li>Clean and sanitize the washing machine and dryer.</li>
+            <li>Wipe down shelves and walls in laundry closets.</li>
+        </ul>
+
+        <h2>Additional Tasks</h2>
+        <ul>
+            <li><strong>Decluttering:</strong> Organize and tidy up areas, removing clutter and organizing items.</li>
+            <li><strong>Disinfecting:</strong> Sanitize high-touch surfaces, such as doorknobs, light switches, and
+                countertops.
+            </li>
+            <li><strong>Organizing:</strong> Organize shelves, drawers, and closets.</li>
+            <li><strong>Deep Cleaning:</strong> Depending on the cleaning service, a deep clean might include tasks like
+                cleaning hard-to-reach areas, washing HVAC vent covers, and removing stains.
+            </li>
+        </ul>
 </body>
 </html>
 
-           <div class="section" id="soft-washing-benefits" style="background: #f9f9f9; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-  <h2 style="color: #2c3e50;">Why Choose Soft Washing?</h2>
-  <p>Soft washing your home offers a gentler, safer, and more effective cleaning method than traditional pressure washing, protecting delicate surfaces, eliminating mold and mildew, and extending the lifespan of your home's exterior.</p>
-  
-  <h3 style="color: #3498db;">Here's a more detailed look at the benefits:</h3>
-  <ul style="line-height: 1.8;">
-    <li><strong>Safer for Delicate Surfaces:</strong> Soft washing uses low-pressure water and biodegradable cleaning solutions, making it ideal for fragile surfaces like wood siding, stucco, and shingles.</li>
-    <li><strong>Effective Mold and Mildew Removal:</strong> Soft washing solutions contain biocides that kill and remove mold, mildew, algae, and organic matter—protecting your home's health and appearance.</li>
-    <li><strong>Long-Lasting Clean:</strong> Soft washing provides a deeper clean that lasts longer than pressure washing by addressing the root cause of staining.</li>
-    <li><strong>Eco-Friendly:</strong> Most soft washing solutions are biodegradable and less harmful to the environment compared to typical pressure washing chemicals.</li>
-    <li><strong>Improves Curb Appeal:</strong> A clean, well-maintained exterior significantly boosts your home's visual appeal and value.</li>
-    <li><strong>Extends Lifespan of Home Surfaces:</strong> Regular soft washing helps preserve your siding, roof, and other surfaces by removing damaging contaminants.</li>
-    <li><strong>Reduces Risk of Damage:</strong> Its gentle method minimizes the risk of costly surface damage, especially on older or delicate homes.</li>
-    <li><strong>Cleans Hard-to-Reach Areas:</strong> Perfect for tricky spots like roofs, eaves, and corners that high-pressure washing often misses.</li>
-  </ul>
+<div class="section" id="soft-washing-benefits"
+     style="background: #f9f9f9; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+    <h2 style="color: #2c3e50;">Why Choose Soft Washing?</h2>
+    <p>Soft washing your home offers a gentler, safer, and more effective cleaning method than traditional pressure
+        washing, protecting delicate surfaces, eliminating mold and mildew, and extending the lifespan of your home's
+        exterior.</p>
+
+    <h3 style="color: #3498db;">Here's a more detailed look at the benefits:</h3>
+    <ul style="line-height: 1.8;">
+        <li><strong>Safer for Delicate Surfaces:</strong> Soft washing uses low-pressure water and biodegradable
+            cleaning solutions, making it ideal for fragile surfaces like wood siding, stucco, and shingles.
+        </li>
+        <li><strong>Effective Mold and Mildew Removal:</strong> Soft washing solutions contain biocides that kill and
+            remove mold, mildew, algae, and organic matter—protecting your home's health and appearance.
+        </li>
+        <li><strong>Long-Lasting Clean:</strong> Soft washing provides a deeper clean that lasts longer than pressure
+            washing by addressing the root cause of staining.
+        </li>
+        <li><strong>Eco-Friendly:</strong> Most soft washing solutions are biodegradable and less harmful to the
+            environment compared to typical pressure washing chemicals.
+        </li>
+        <li><strong>Improves Curb Appeal:</strong> A clean, well-maintained exterior significantly boosts your home's
+            visual appeal and value.
+        </li>
+        <li><strong>Extends Lifespan of Home Surfaces:</strong> Regular soft washing helps preserve your siding, roof,
+            and other surfaces by removing damaging contaminants.
+        </li>
+        <li><strong>Reduces Risk of Damage:</strong> Its gentle method minimizes the risk of costly surface damage,
+            especially on older or delicate homes.
+        </li>
+        <li><strong>Cleans Hard-to-Reach Areas:</strong> Perfect for tricky spots like roofs, eaves, and corners that
+            high-pressure washing often misses.
+        </li>
+    </ul>
 </div>
-            <ul>
-        </div>
-        <div id="contact" class="section">
-            <h2>Contact Us Today For A FREE QUOTE!!</h2>
-            <p>Email: <a href="mailto:support@cleanwyze.com">Support@cleanwyze.com</a></p>
-            <p>Email: <a href="mailto:freeestimates@cleanwyze.com">Freeestimates@cleanwyze.com</a></p>
-            <p>Phone: 901-267-5863</p>
-        </div>
+<ul>
+    </div>
+    <div id="contact" class="section">
+        <h2>Contact Us Today For A FREE QUOTE!!</h2>
+        <p>Email: <a href="mailto:support@cleanwyze.com">Support@cleanwyze.com</a></p>
+        <p>Email: <a href="mailto:freeestimates@cleanwyze.com">Freeestimates@cleanwyze.com</a></p>
+        <p>Phone: 901-267-5863</p>
+    </div>
     </div>
     <footer>
         <p>&copy; 2006 Clean Wyze A Subsidiary of: CW ENTERPRISE. All rights reserved.</p>
     </footer>
-</body>
-</html>
+    </body>
+    </html>
