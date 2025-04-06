@@ -12,6 +12,8 @@
             font-family: Arial, san-serif, serif;
             margin: 0;
             padding: 0;
+            background-color: #ccc;
+            background-image: url("/Assets/body-background.png");
         }
 
         header {
@@ -34,15 +36,15 @@
             margin: 0 0;
             font-style: normal;
             color: rgba(76, 255, 0, 0.71);
-            text-shadow: 4px 4px 0px black;
+            text-shadow: 4px 4px 0 black;
             -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: rgba(0,0,0,-0);
+            -webkit-text-stroke-color: rgba(0, 0, 0, -0);
         }
 
         header p {
             font-size: 28px;
             color: rgba(76, 255, 0, 0.71);
-            text-shadow: 3px 3px 0px black;
+            text-shadow: 3px 3px 0 black;
             font-weight: 650;
             margin: 3px 0;
             -webkit-text-stroke-width: 2px;
@@ -62,12 +64,13 @@
         }
 
         .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .section {
+            width: 75%;
             background: white;
             padding: 20px;
             margin-bottom: 20px;
@@ -81,37 +84,30 @@
             padding: 20px;
             text-align: center;
         }
-        @keyframes float {
-            0% {
-                transform: translateY(100vh) scale(0.5);
-                opacity: 0.7;
-            }
-            50% {
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(-10vh) scale(1);
-                opacity: 0;
-            }
+
+        .algae {
+            color: #00cfcf;
         }
     </style>
 </head>
 <body>
-<header>
-    <h1>CleanWyze!</h1>
-    <p>     Professional Interior & Exterior Residential Cleaning </p>
-    <p>CALL US TODAY & LET US WASH YOUR TROUBLES AWAY!! 901-267-5863 </p>
-</header>
-<nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-    <a href="#Exterior Soft Wash">Exterior Soft Wash</a>
-    <a href="#Roofs">Roofs</a>
-    <a href="#Gutters and Windows">Gutters and Windows</a>
-    <a href="#Interior Cleaning optionns">Interior Cleaning optionns</a>
-</nav>
-<div class="container">
+<div id="top">
+    <header>
+        <h1>CleanWyze!</h1>
+        <p> Professional Interior & Exterior Residential Cleaning </p>
+        <p>CALL US TODAY & LET US WASH YOUR TROUBLES AWAY!! 901-267-5863 </p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+        <a href="#general-cleaning">Interior Cleaning</a>
+        <a href="#exterior-cleaning">Exterior Cleaning</a>
+        <a href="#soft-washing-benefits">Soft Washing</a>
+        <a href="#roof-algae">Roof Algae</a>
+    </nav>
+</div>
+<div id="shit-goes-here" class="container">
     <div id="about" class="section">
         <h2>About Us</h2>
         <p>We're the cleaning service that understands the importance of a clean home and a relaxed lifestyle. We'll
@@ -126,8 +122,9 @@
             <li>Window Cleaning</li>
             <li>Basic Interior Cleaning</li>
             <li>Interior Deep Cleaning (including Kitchens, Bathrooms, Mudrooms)</li>
-
         </ul>
+    </div>
+    <div id="general-cleaning" class="section">
         <h2>General Cleaning</h2>
         <ul>
             <li><strong>Dusting:</strong> Dust all surfaces, including furniture, shelves, picture frames, and light
@@ -141,7 +138,8 @@
             <li><strong>Mirror Cleaning:</strong> Clean mirrors and glass surfaces to a shine.</li>
             <li><strong>Trash Removal:</strong> Empty trash and recycling bins.</li>
         </ul>
-
+    </div>
+    <div id="specific-room-cleaning" class="section">
         <h2>Specific Room Cleaning</h2>
         <h3>Kitchen</h3>
         <ul>
@@ -183,7 +181,8 @@
             <li>Clean and sanitize the washing machine and dryer.</li>
             <li>Wipe down shelves and walls in laundry closets.</li>
         </ul>
-
+    </div>
+    <div id="additional-tasks" class="section">
         <h2>Additional Tasks</h2>
         <ul>
             <li><strong>Decluttering:</strong> Organize and tidy up areas, removing clutter and organizing items.</li>
@@ -195,357 +194,168 @@
                 cleaning hard-to-reach areas, washing HVAC vent covers, and removing stains.
             </li>
         </ul>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Soft Washing Over Pressure Washing</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 2rem;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-            background-color: #ffffff;
-            padding: 2rem;
-            border-radius: 12px;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #1e88e5;
-            margin-top: 0;
-        }
-        p {
-            line-height: 1.6;
-            margin-bottom: 1rem;
-        }
-    </style>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Exterior House Washing Services</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                background-color: #f4f4f4;
-                margin: 0;
-                padding: 2rem;
-            }
-            .container {
-                max-width: 800px;
-                margin: auto;
-                background-color: #ffffff;
-                padding: 2rem;
-                border-radius: 12px;
-                box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-            }
-            h2 {
-                color: #1e88e5;
-                margin-top: 0;
-            }
-            p {
-                line-height: 1.6;
-                margin-bottom: 1rem;
-            }
-        </style>
-    </head>
-    <body>
-    <div class="container">
-        <h2>Professional Exterior House Washing</h2>
-        <p>We provide professional exterior house washing services for any type of material. Whether your home's exterior is made of brick, stucco, vinyl, or wood, we can make it shine!</p>
-        <p>Our procedures are tailored based on the material that we are washing. For instance, building exteriors such as stucco and vinyl can easily be damaged by high pressure. Keep reading to learn more about how we tailor our solutions to your needs in Memphis, TN and surrounding areas.</p>
     </div>
-    </body>
-    </html>
+    <div id="exterior-cleaning" class="section">
+        <h2>Professional Exterior House Washing</h2>
+        <p>We provide professional exterior house washing services for any type of material. Whether your home's
+            exterior is made of brick, stucco, vinyl, or wood, we can make it shine!</p>
+        <p>Our procedures are tailored based on the material that we are washing. For instance, building exteriors
+            such
+            as stucco and vinyl can easily be damaged by high pressure. Keep reading to learn more about how we
+            tailor
+            our solutions to your needs in Memphis, TN and surrounding areas.</p>
+    </div>
+    <div id="no-power-washing" class="section">
+        <h2>Pressure Washing is a Thing of the Past</h2>
+        <p>Here at <strong>Clean Wyze</strong>, we soft wash the exterior of all our homes. Pressure washing can
+            cause
+            unwanted damage to vinyl siding and only temporarily cleans the mold off of your home.</p>
+        <p>The detergents that we use totally remove the mildew and mold from your house — down to the spores.
+            Included
+            in
+            your house wash, we also clean the soffits, trim, gutters, and fascias.</p>
+    </div>
+    <div id="soft-washing-benefits" class="section">
+        <h2 style="color: #2c3e50;">Why Choose Soft Washing?</h2>
+        <p>Soft washing your home offers a gentler, safer, and more effective cleaning method than traditional
+            pressure
+            washing, protecting delicate surfaces, eliminating mold and mildew, and extending the lifespan of your
+            home's
+            exterior.</p>
 
-</head>
-<body>
-<div class="container">
-    <h2>Pressure Washing is a Thing of the Past</h2>
-    <p>Here at <strong>Clean Wyze</strong>, we soft wash the exterior of all our homes. Pressure washing can cause unwanted damage to vinyl siding and only temporarily cleans the mold off of your home.</p>
-    <p>The detergents that we use totally remove the mildew and mold from your house — down to the spores. Included in your house wash, we also clean the soffits, trim, gutters, and fascias.</p>
-</div>
-</body>
-</html>
-
-
-<div class="section" id="soft-washing-benefits"
-     style="background: #f9f9f9; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
-    <h2 style="color: #2c3e50;">Why Choose Soft Washing?</h2>
-    <p>Soft washing your home offers a gentler, safer, and more effective cleaning method than traditional pressure
-        washing, protecting delicate surfaces, eliminating mold and mildew, and extending the lifespan of your home's
-        exterior.</p>
-
-    <h3 style="color: #3498db;">Here's a more detailed look at the benefits:</h3>
-    <ul style="line-height: 1.8;">
-        <li><strong>Safer for Delicate Surfaces:</strong> Soft washing uses low-pressure water and biodegradable
-            cleaning solutions, making it ideal for fragile surfaces like wood siding, stucco, and shingles.
-        </li>
-        <li><strong>Effective Mold and Mildew Removal:</strong> Soft washing solutions contain biocides that kill and
-            remove mold, mildew, algae, and organic matter—protecting your home's health and appearance.
-        </li>
-        <li><strong>Long-Lasting Clean:</strong> Soft washing provides a deeper clean that lasts longer than pressure
-            washing by addressing the root cause of staining.
-        </li>
-        <li><strong>Eco-Friendly:</strong> Most soft washing solutions are biodegradable and less harmful to the
-            environment compared to typical pressure washing chemicals.
-        </li>
-        <li><strong>Improves Curb Appeal:</strong> A clean, well-maintained exterior significantly boosts your home's
-            visual appeal and value.
-        </li>
-        <li><strong>Extends Lifespan of Home Surfaces:</strong> Regular soft washing helps preserve your siding, roof,
-            and other surfaces by removing damaging contaminants.
-        </li>
-        <li><strong>Reduces Risk of Damage:</strong> Its gentle method minimizes the risk of costly surface damage,
-            especially on older or delicate homes.
-        </li>
-        <li><strong>Cleans Hard-to-Reach Areas:</strong> Perfect for tricky spots like roofs, eaves, and corners that
-            high-pressure washing often misses.
-        </li><!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Roof Algae 101</title>
-            <style>
-                body {
-                    font-family: Arial, sans-serif;
-                    line-height: 1.6;
-                    background-color: #f9f9f9;
-                    padding: 20px;
-                    color: #333;
-                }
-                h1 {
-                    color: #2a4d69;
-                }
-                p {
-                    max-width: 700px;
-                }
-            </style>
-        </head>
-        <body>
-
-        <h1>Roof Algae 101</h1>
-        <p>
-            The unsightly dark areas of your roof are likely a type of blue green algae known as <strong>Gloeocapsa Magma</strong>.
-            It releases spores that easily travel from roof to roof, which can wreak havoc on an entire neighborhood.
-        </p>
-        <p>
-            Roof algae thrives in high humidity, damp areas which are usually shaded. You may notice that the north side
-            of your home or building contains the most green areas. That is because the north side of your structure gets
-            the least amount of sunlight.
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <title>Exterior Cleaning Solutions</title>
-                <style>
-                    body {
-                        font-family: Arial, sans-serif;
-                        background-color: #f4f4f4;
-                        margin: 0;
-                        padding: 2rem;
-                    }
-                    .container {
-                        max-width: 800px;
-                        margin: auto;
-                        background-color: #ffffff;
-                        padding: 2rem;
-                        border-radius: 12px;
-                        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-                    }
-                    h1, h2 {
-                        color: #1e88e5;
-                        margin-top: 0;
-                    }
-                    p {
-                        line-height: 1.6;
-                        margin-bottom: 1rem;
-                    }
-                </style>
-            </head>
-            <body>
-            <div class="container">
-                <h1>Algae and Limestone: A Moisture Trap</h1>
-                <p>Algae cannot live on limestone alone — it also needs water. Algae has an amazing ability to trap and retain moisture in the right conditions.</p>
-                <p>This damage to your roof can impact your cooling costs, as the moisture in the algae traps heat along with moisture.</p>
-
-                <h2>Tailored Cleaning Procedures</h2>
-                <p>Our procedures are tailored based on the material that we are washing. For instance, building exteriors such as stucco and vinyl can easily be damaged by high pressure.</p>
-                <p>Keep reading to learn more about how we tailor our solutions to your needs in Memphis and surrounding areas!</p>
-            </div>
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <title>Roof Cleaning Benefits</title>
-                <style>
-                    body {
-                        font-family: Arial, sans-serif;
-                        background-color: #f4f4f4;
-                        margin: 0;
-                        padding: 2rem;
-                    }
-                    .container {
-                        max-width: 800px;
-                        margin: auto;
-                        background-color: #ffffff;
-                        padding: 2rem;
-                        border-radius: 12px;
-                        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-                    }
-                    h2 {
-                        color: #1e88e5;
-                        margin-top: 0;
-                    }
-                    ul {
-                        line-height: 1.8;
-                        padding-left: 1.5rem;
-                    }
-                    ul li {
-                        margin-bottom: 0.5rem;
-                    }
-                </style>
-            </head>
-            <body>
-            <div class="container">
-                <h2>Roof Cleaning Benefits</h2>
-                <ul>
-                    <li>Removes dark shading and staining completely</li>
-                    <li>We never use pressure on roofs — complete soft wash!</li>
-                    <li>Safer, more effective & less destructive</li>
-                    <li>Disinfects & sanitizes</li>
-                    <li>100% kill ratio on mold, mildew & bacteria</li>
-                </ul>
-            </div>
-            <!DOCTYPE html>
-            <html lang="en">
-            <head>
-                <meta charset="UTF-8">
-                <title>Hardyboard and Wood Clapboard Washing</title>
-                <style>
-                    body {
-                        font-family: Arial, sans-serif;
-                        background-color: #f4f4f4;
-                        margin: 0;
-                        padding: 2rem;
-                    }
-                    .container {
-                        max-width: 800px;
-                        margin: auto;
-                        background-color: #ffffff;
-                        padding: 2rem;
-                        border-radius: 12px;
-                        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-                    }
-                    h2 {
-                        color: #1e88e5;
-                        margin-top: 0;
-                    }
-                    p {
-                        line-height: 1.6;
-                        margin-bottom: 1rem;
-                    }
-                </style>
-            </head>
-            <body>
-            <div class="container">
-                <h2>Hardyboard and Wood Clapboard Washing</h2>
-                <p>Hardy board and wood clapboard is a little more tricky. We have to consider the type, age, condition of the wood, including any paint or finish that is already on the wood.</p>
-                <p>In many cases, the wood or paint is not durable enough to use high pressure. We soft wash these surfaces all the time and get great results.</p>
-                <p>Read the paragraph above to learn more about soft washing.</p>
-                <!DOCTYPE html>
-                <html lang="en">
-                <head>
-                    <meta charset="UTF-8">
-                    <title>Brick Washing</title>
-                    <style>
-                        body {
-                            font-family: Arial, sans-serif;
-                            background-color: #f4f4f4;
-                            margin: 0;
-                            padding: 2rem;
-                        }
-                        .container {
-                            max-width: 800px;
-                            margin: auto;
-                            background-color: #ffffff;
-                            padding: 2rem;
-                            border-radius: 12px;
-                            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-                        }
-                        h2 {
-                            color: #1e88e5;
-                            margin-top: 0;
-                        }
-                        p {
-                            line-height: 1.6;
-                            margin-bottom: 1rem;
-                        }
-                    </style>
-                </head>
-                <body>
-                <div class="container">
-                    <h2>Brick Washing</h2>
-                    <p>Brick is a very durable material that can safely withstand high temperatures and pressure when compared to other exterior materials.</p>
-                    <p>That doesn't mean that we go with the nuclear option from the get-go. Instead of just power-blasting your surfaces clean, we let it soak in solution in order to penetrate and pre-dissolve the nasty stuff.</p>
-                    <p>This ensures that we don't have to apply surface-damaging levels of pressure to get the job done.</p>
-                    <!DOCTYPE html>
-                    <html lang="en">
-                    <head>
-                        <meta charset="UTF-8">
-                        <title>Stucco and Vinyl Washing</title>
-                        <style>
-                            body {
-                                font-family: Arial, sans-serif;
-                                background-color: #f4f4f4;
-                                margin: 0;
-                                padding: 2rem;
-                            }
-                            .container {
-                                max-width: 800px;
-                                margin: auto;
-                                background-color: #ffffff;
-                                padding: 2rem;
-                                border-radius: 12px;
-                                box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-                            }
-                            h2 {
-                                color: #1e88e5;
-                                margin-top: 0;
-                            }
-                            p {
-                                line-height: 1.6;
-                                margin-bottom: 1rem;
-                            }
-                        </style>
-                    </head>
-                    <body>
-                    <div class="container">
-                        <h2>Stucco and Vinyl Washing</h2>
-                        <p>Stucco and vinyl siding are much more prone to damage, so we use a process called softwashing. Hot temperatures can damage stucco and vinyl, so the water that we use is cold.</p>
-                        <p>Cleaning more delicate materials such as these is best done with soaking and chemicals, not pressure. We use a perfect blend of chemical concentration, soak time, and light pressure in order to effectively clean these surfaces without doing any damage.</p>
-                        <p>The detergents that we use contain surfactants and rinse aides, similar to a dishwashing liquid. It works great on windows and siding. We also utilize algicide which helps to prevent the growth of more algae in the future.</p>
-                    </div>
-                    </body>
-                    </html>
-
-                    <div id="contact" class="section">
+        <h3>Here's a more detailed look at the benefits:</h3>
+        <ul style="line-height: 1.8;">
+            <li><strong>Safer for Delicate Surfaces:</strong> Soft washing uses low-pressure water and biodegradable
+                cleaning solutions, making it ideal for fragile surfaces like wood siding, stucco, and shingles.
+            </li>
+            <li><strong>Effective Mold and Mildew Removal:</strong> Soft washing solutions contain biocides that
+                kill
+                and
+                remove mold, mildew, algae, and organic matter—protecting your home's health and appearance.
+            </li>
+            <li><strong>Long-Lasting Clean:</strong> Soft washing provides a deeper clean that lasts longer than
+                pressure
+                washing by addressing the root cause of staining.
+            </li>
+            <li><strong>Eco-Friendly:</strong> Most soft washing solutions are biodegradable and less harmful to the
+                environment compared to typical pressure washing chemicals.
+            </li>
+            <li><strong>Improves Curb Appeal:</strong> A clean, well-maintained exterior significantly boosts your
+                home's
+                visual appeal and value.
+            </li>
+            <li><strong>Extends Lifespan of Home Surfaces:</strong> Regular soft washing helps preserve your siding,
+                roof,
+                and other surfaces by removing damaging contaminants.
+            </li>
+            <li><strong>Reduces Risk of Damage:</strong> Its gentle method minimizes the risk of costly surface
+                damage,
+                especially on older or delicate homes.
+            </li>
+            <li><strong>Cleans Hard-to-Reach Areas:</strong> Perfect for tricky spots like roofs, eaves, and corners
+                that
+                high-pressure washing often misses.
+            </li>
+        </ul>
+    </div>
+    <div id="roof-algae" class="section">
+        <div id="algae-101">
+            <h1>Roof Algae 101</h1>
+            <p>
+                The unsightly dark areas of your roof are likely a type of blue green algae known as <strong
+                    class="algae">Gloeocapsa
+                Magma</strong>.
+                It releases spores that easily travel from roof to roof, which can wreak havoc on an entire
+                neighborhood.
+            </p>
+            <p>
+                Roof algae thrives in high humidity, damp areas which are usually shaded. You may notice that the north
+                side
+                of your home or building contains the most green areas. That is because the north side of your structure
+                gets
+                the least amount of sunlight.
+            </p>
+        </div>
+        <div id="algae-and-limestone">
+            <h2>Algae and Limestone: A Moisture Trap</h2>
+            <p>Algae cannot live on limestone alone — it also needs water. Algae has an amazing ability to trap and
+                retain
+                moisture in the right conditions.</p>
+            <p>This damage to your roof can impact your cooling costs, as the moisture in the algae traps heat along
+                with
+                moisture.</p>
+        </div>
+        <div id="tailored-cleaning-procedures">
+            <h2>Tailored Cleaning Procedures</h2>
+            <p>Our procedures are tailored based on the material that we are washing. For instance, building
+                exteriors
+                such
+                as stucco and vinyl can easily be damaged by high pressure.</p>
+            <p>Keep reading to learn more about how we tailor our solutions to your needs in Memphis and surrounding
+                areas!</p>
+        </div>
+        <div id="roof-cleaning-benefits">
+            <h2>Roof Cleaning Benefits</h2>
+            <ul>
+                <li>Removes dark shading and staining completely</li>
+                <li>We never use pressure on roofs — complete soft wash!</li>
+                <li>Safer, more effective & less destructive</li>
+                <li>Disinfects & sanitizes</li>
+                <li>100% kill ratio on mold, mildew & bacteria</li>
+            </ul>
+        </div>
+        <div id="hardyboard-washing">
+            <h2>Hardyboard and Wood Clapboard Washing</h2>
+            <p>Hardy board and wood clapboard is a little more tricky. We have to consider the type, age, condition
+                of
+                the
+                wood, including any paint or finish that is already on the wood.</p>
+            <p>In many cases, the wood or paint is not durable enough to use high pressure. We soft wash these
+                surfaces
+                all
+                the time and get great results.</p>
+            <p>Read the paragraph above to learn more about soft washing.</p>
+        </div>
+        <div id="brick-washing">
+            <h2>Brick Washing</h2>
+            <p>Brick is a very durable material that can safely withstand high temperatures and pressure when
+                compared
+                to
+                other exterior materials.</p>
+            <p>That doesn't mean that we go with the nuclear option from the get-go. Instead of just power-blasting
+                your
+                surfaces clean, we let it soak in solution in order to penetrate and pre-dissolve the nasty
+                stuff.</p>
+            <p>This ensures that we don't have to apply surface-damaging levels of pressure to get the job done.</p>
+        </div>
+        <div id="stucco-washing">
+            <h2>Stucco and Vinyl Washing</h2>
+            <p>Stucco and vinyl siding are much more prone to damage, so we use a process called softwashing. Hot
+                temperatures can damage stucco and vinyl, so the water that we use is cold.</p>
+            <p>Cleaning more delicate materials such as these is best done with soaking and chemicals, not pressure.
+                We
+                use
+                a perfect blend of chemical concentration, soak time, and light pressure in order to effectively
+                clean
+                these
+                surfaces without doing any damage.</p>
+            <p>The detergents that we use contain surfactants and rinse aides, similar to a dishwashing liquid. It
+                works
+                great on windows and siding. We also utilize algicide which helps to prevent the growth of more
+                algae in
+                the
+                future.</p>
+        </div>
+    </div>
+    <div id="contact" class="section">
         <h2>Contact Us Today For A FREE QUOTE!!</h2>
         <p>Email: <a href="mailto:support@cleanwyze.com">Support@cleanwyze.com</a></p>
         <p>Email: <a href="mailto:freeestimates@cleanwyze.com">Freeestimates@cleanwyze.com</a></p>
         <p>Phone: 901-267-5863</p>
     </div>
-    </div>
-    <footer>
-        <p>&copy; 2006 Clean Wyze A Subsidiary of: CW ENTERPRISE. All rights reserved.</p>
-    </footer>
-    </body>
-    </html>
+</div>
+<footer>
+    <p>&copy; 2006 Clean Wyze A Subsidiary of: CW ENTERPRISE. All rights reserved.</p>
+</footer>
+</body>
+</html>
